@@ -1,0 +1,197 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+/* -------------------End General CSS--------------------------
+*/
+
+/* --------------Begin Main Container----------------------------
+*/
+.main-container {
+
+    width: 95%;
+    height: 100%;
+}
+
+/* --------------Begin Main Container----------------------------
+*/
+
+/* --------------Begin Header Section----------------------------
+*/
+.container-header {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------End Header Section----------------------------
+*/
+
+/* --------------Begin Main Section----------------------------
+*/
+
+.list-section {
+    height: 80%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+    font-size: .7rem;
+}
+
+.list-section>form>ul>li {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+.custom-card>input {
+    margin-top: 1rem;
+}
+
+.custom-card {
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    border-width: .1rem;
+    border-style: solid;
+    width: 70%;
+
+}
+
+.custom-card>input {
+    margin-left: 1rem;
+    margin-bottom: .4rem;
+}
+
+.custom-card>.content {
+    text-align: center;
+}
+
+.custom-card>.content>p {
+    margin-bottom: 0;
+}
+
+/* --------------End Main Section----------------------------
+*/
+
+/* --------------Begin Footer Section----------------------------
+*/
+.footer-section {
+    text-align: center;
+}
+
+/* --------------End Footer Section----------------------------
+*/
+
+/*----------------Second Page--------------------------------*/
+/*---------------Begin General Form---------------------------*/
+#product-form {
+    height: 80%;
+}
+
+#sku {
+    margin-left: 3.1rem;
+}
+
+#name {
+    margin-left: 2.3rem;
+}
+
+#price {
+    margin-left: 1.3rem;
+}
+
+
+#productType {
+    margin-left: 1rem;
+}
+
+.info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*---------------End General Form---------------------------*/
+
+/*---------------Begin DVD Section---------------------------*/
+
+#DVD {
+    display: none;
+}
+
+#size {
+    margin-left: 1rem;
+}
+
+/*---------------End DVD Section---------------------------*/
+
+/*---------------Begin Furniture Section---------------------------*/
+#Furniture {
+    display: none;
+}
+
+#height {
+    margin-left: 1rem;
+}
+
+#width {
+    margin-left: 1.3rem;
+}
+
+#length {
+    margin-left: 1rem;
+}
+
+/*---------------End Furniture Section---------------------------*/
+
+/*---------------Begin Book Section---------------------------*/
+#Book {
+    display: none;
+}
+
+#weight {
+    margin-left: 1rem;
+}
+
+/*---------------End Book Section---------------------------*/
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .list-section>form>ul>li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-section>form>ul {
+        padding-left: 0;
+    }
+
+    .list-section {
+        height: 82%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+}

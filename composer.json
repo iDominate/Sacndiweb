@@ -1,0 +1,19 @@
+{
+    "name": "scandiweb/task",
+    "description": "This is the required task by Scandiweb",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ahmed Ghanem"
+        }
+    ],
+    "require": {
+        "thingengineer/mysqli-database-class": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App",
+            "Core\\": "src"
+        }
+    }
+}
